@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SoftPto Tailwind</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="./JS/gsap/gsap.min.js" defer></script>
+    <script src="./JS/gsap/ScrollTrigger.min.js" defer></script>
+    <script src="./JS/gsap/ScrollSmoother.min.js" defer></script>
+    <script src="./JS/main.js" defer></script>
+</head>
+<body class="bg-[#101010] text-white">
+<div class="wrapper">
+    <div class="content">
+        <header class="sticky top-0 w-full z-10 backdrop-blur-[12px]">
+            <div class=" max-w-[1296px] mx-auto flex justify-between items-center py-8 min-h-[124px]">
+                <div class="flex items-center">
+                    <img class="mr-[10px]" src="./images/Rectangle%20203.png" alt="">
+                    <p class="text-sm font-normal leading-[22px]">
+                        Міністерство <br> Відновлення
+                    </p>
+                </div>
+                <nav class="flex justify-between w-[684px] px-[10px]">
+                    <a class="text-base font-extrabold leading-[22px] text-white rounded-[20px] active:text-black active:bg-yellow-300  hover:bg-zinc-800 p-[10px] mr-[12px] transition-[0.2s]" href="#">Реєстри</a>
+                    <a class="text-base font-extrabold leading-[22px] text-white rounded-[20px] active:text-black active:bg-yellow-300  hover:bg-zinc-800 p-[10px] mr-[12px] transition-[0.2s]" href="#">Сервіси</a>
+                    <a class="text-base font-extrabold leading-[22px] text-white rounded-[20px] active:text-black active:bg-yellow-300  hover:bg-zinc-800 p-[10px] mr-[12px] transition-[0.2s]" href="#">Стратегії</a>
+                    <a class="text-base font-extrabold leading-[22px] text-white rounded-[20px] active:text-black active:bg-yellow-300  hover:bg-zinc-800 p-[10px] mr-[12px] transition-[0.2s]" href="#">Програми та проєкти</a>
+                    <a class="text-base font-extrabold leading-[22px] text-white rounded-[20px] active:text-black active:bg-yellow-300  hover:bg-zinc-800 p-[10px] mr-[12px] transition-[0.2s]" href="#">Документація</a>
+                </nav>
+                <div class="flex items-center space-x-4">
+                    <a href="#"><img src="./images/btn.png" alt=""></a>
+                    <a href="#"><img src="./images/btn%20(1).png" alt=""></a>
+                    <button type="submit" class="w-[97px] h-[44px] bg-transparent border border-white rounded-full text-white transition duration-200 hover:bg-white hover:text-[#101010]">
+                        UA
+                    </button>
+                    <button type="submit" class="w-[97px] h-[44px] bg-transparent border border-white rounded-full text-white transition duration-200 hover:bg-white hover:text-[#101010]">
+                        Увійти
+                    </button>
+                </div>
+            </div>
+        </header>
+        <main>
+<!--            Preview-->
+            <div class="relative w-full mb-[144px]">
+                <div class="relative w-full h-full">
+                    <img class="w-full max-h-[1000px] object-cover block" src="./images/animation%20map.png" alt="">
+                    <div class="absolute top-0 left-0 w-full h-full flex flex-col items-center text-white">
+                        <!-- Верхний текст -->
+                        <div class="preview__head absolute top-0 left-0 w-full text-center bg-[rgba(21,21,21,0.5)] backdrop-blur-[10px] p-5">
+                            <h1 class="text-[57px] font-bold leading-[72px] text-left max-w-[1224px] mx-auto">Геопортал показників Регіонального <br> розвитку</h1>
+                            <p class="text-lg font-normal leading-[24px] text-left max-w-[1224px] mx-auto">Єдина геоінформаційна система здійснення моніторингу та оцінювання <br> розвитку регіонів і територіальних громад</p>
+                        </div>
+                        <!-- Нижний текст -->
+                        <div class="preview__foot absolute bottom-0 left-0 w-full bg-[rgba(21,21,21,0.5)] backdrop-blur-[10px] p-11">
+                            <h1 class="text-[44px] text-center font-medium leading-normal text-left max-w-[1224px] mx-auto text-gray-300">Наша мета</h1>
+                            <p class="text-[22px] text-center font-normal leading-[28px] text-left max-w-[1224px] mx-auto text-gray-300">Забезпечити повний цикл формування, реалізації та моніторингу регіональної політики: від рішень на основі даних та стратегічного планування до роботи зі стейкголдерами та моніторингу регіонального розвитку</p>
+                        </div>
+                        <!-- Изображения -->
+
+                    </div>
+                </div>
+            </div>
+<!--            Folder-->
+            <div class="mb-[140px]">
+                <div class="folder__container max-w-[1312px] mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-9 justify-items-center">
+                    <!-- Блок 1 -->
+                    <div class="folder__block relative flex flex-col justify-between items-start m-3 group">
+                        <img src="./images/Frame%20140.png" alt="" class="w-full">
+                        <img src="./images/Frame%2014011.png" alt=""
+                             class="overlay absolute top-[45px] left-0 w-full -z-10 h-[310px] transition-transform duration-200 ease-in-out group-hover:translate-y-[-85px]">
+                        <h2 class="absolute top-[10px] left-[30px] text-2xl font-normal">1/6</h2>
+                        <p class="absolute bottom-[40px] left-[30px] text-lg font-normal max-w-[250px] transition-transform duration-200 group-hover:translate-y-[-85px]">Інтерактивна карта</p>
+                    </div>
+
+                    <!-- Блок 2 -->
+                    <div class="folder__block relative flex flex-col justify-between items-start m-3 group">
+                        <img src="./images/Frame%20140.png" alt="" class="w-full">
+                        <img src="./images/Frame%2014011.png" alt=""
+                             class="overlay absolute top-[45px] left-0 w-full -z-10 h-[310px] transition-transform duration-200 ease-in-out group-hover:translate-y-[-85px]">
+                        <h2 class="absolute top-[10px] left-[30px] text-2xl font-normal">2/6</h2>
+                        <p class="absolute bottom-[40px] left-[30px] text-lg font-normal max-w-[250px] transition-transform duration-200 group-hover:translate-y-[-85px]">Стратегічне <br> планування</p>
+                    </div>
+
+                    <!-- Блок 3 -->
+                    <div class="folder__block relative flex flex-col justify-between items-start m-3 group">
+                        <img src="./images/Frame%20140.png" alt="" class="w-full">
+                        <img src="./images/Frame%2014011.png" alt=""
+                             class="overlay absolute top-[45px] left-0 w-full -z-10 h-[310px] transition-transform duration-200 ease-in-out group-hover:translate-y-[-85px]">
+                        <h2 class="absolute top-[10px] left-[30px] text-2xl font-normal">3/6</h2>
+                        <p class="absolute bottom-[40px] left-[30px] text-lg font-normal max-w-[250px] transition-transform duration-200 group-hover:translate-y-[-45px]">Реєстр договорів про<br> співробітництво територіальних<br> громад</p>
+                    </div>
+
+                    <!-- Блок 4 -->
+                    <div class="folder__block relative flex flex-col justify-between items-start m-3 group">
+                        <img src="./images/Frame%20140.png" alt="" class="w-full">
+                        <img src="./images/Frame%2014011.png" alt=""
+                             class="overlay absolute top-[45px] left-0 w-full -z-10 h-[310px] transition-transform duration-200 ease-in-out group-hover:translate-y-[-85px]">
+                        <h2 class="absolute top-[10px] left-[30px] text-2xl font-normal">4/6</h2>
+                        <p class="absolute bottom-[40px] left-[30px] text-lg font-normal max-w-[250px] transition-transform duration-200 group-hover:translate-y-[-85px]">Профайл громад</p>
+                    </div>
+
+                    <!-- Блок 5 -->
+                    <div class="folder__block relative flex flex-col justify-between items-start m-3 group">
+                        <img src="./images/Frame%20140.png" alt="" class="w-full">
+                        <img src="./images/Frame%2014011.png" alt=""
+                             class="overlay absolute top-[45px] left-0 w-full -z-10 h-[310px] transition-transform duration-200 ease-in-out group-hover:translate-y-[-85px]">
+                        <h2 class="absolute top-[10px] left-[30px] text-2xl font-normal">5/6</h2>
+                        <p class="absolute bottom-[40px] left-[30px] text-lg font-normal max-w-[250px] transition-transform duration-200 group-hover:translate-y-[-85px]">Інвестиційний індекс</p>
+                    </div>
+
+                    <!-- Блок 6 -->
+                    <div class="folder__block relative flex flex-col justify-between items-start m-3 group">
+                        <img src="./images/Frame%20140.png" alt="" class="w-full">
+                        <img src="./images/Frame%2014011.png" alt=""
+                             class="overlay absolute top-[45px] left-0 w-full -z-10 h-[310px] transition-transform duration-200 ease-in-out group-hover:translate-y-[-85px]">
+                        <h2 class="absolute top-[10px] left-[30px] text-2xl font-normal">6/6</h2>
+                        <p class="absolute bottom-[40px] left-[30px] text-lg font-normal max-w-[250px] transition-transform duration-200 group-hover:translate-y-[-85px]">Місцеві дані</p>
+                    </div>
+
+                </div>
+            </div>
+<!--            Circle-->
+            <div class="mb-[225px]">
+                <div class="max-w-[1224px] mx-auto">
+                    <h1 class="mb-16 text-4xl font-normal leading-normal text-white">
+                        Cтан затвердження стратегічних <br /> документів у розрізі громад
+                    </h1>
+                    <div class="progress grid sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4 gap-20 justify-items-center">
+                        <!-- Перше коло -->
+                        <div class="relative w-[280px] h-[280px]">
+                            <svg class="transform -rotate-90 w-full h-full">
+                                <!-- Фон кола -->
+                                <circle
+                                        class="text-gray-600"
+                                        stroke-width="32"
+                                        stroke="currentColor"
+                                        cx="140"
+                                        cy="140"
+                                        r="100"
+                                        fill="transparent"
+                                ></circle>
+                                <!-- Активний прогрес -->
+                                <circle
+                                        class="text-lime-400 progress-ring__circle"
+                                        stroke-width="32"
+                                        stroke="currentColor"
+                                        stroke-dasharray="628"
+                                        stroke-dashoffset="628"
+                                        cx="140"
+                                        cy="140"
+                                        r="100"
+                                        fill="transparent"
+                                ></circle>
+                            </svg>
+                            <!-- Процент у центрі -->
+                            <span class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-4xl font-bold text-white">
+                    91%
+                </span>
+                            <h2 class="mt-5 text-lg font-normal text-white text-center">
+                                ТГ, які охоплені процесом стратегічного планування
+                            </h2>
+                        </div>
+
+                        <!-- Друге коло -->
+                        <div class="relative w-[280px] h-[280px]">
+                            <svg class="transform -rotate-90 w-full h-full">
+                                <circle
+                                        class="text-gray-600"
+                                        stroke-width="32"
+                                        stroke="currentColor"
+                                        cx="140"
+                                        cy="140"
+                                        r="100"
+                                        fill="transparent"
+                                ></circle>
+                                <circle
+                                        class="text-lime-400 progress-ring__circle"
+                                        stroke-width="32"
+                                        stroke="currentColor"
+                                        stroke-dasharray="628"
+                                        stroke-dashoffset="628"
+                                        cx="140"
+                                        cy="140"
+                                        r="100"
+                                        fill="transparent"
+                                ></circle>
+                            </svg>
+                            <span class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-4xl font-bold text-white">
+                    56%
+                </span>
+                            <h2 class="mt-5 text-lg font-normal text-white text-center">
+                                ТГ, які мають затверджені стратегії
+                            </h2>
+                        </div>
+
+                        <!-- Третє коло -->
+                        <div class="relative w-[280px] h-[280px]">
+                            <svg class="transform -rotate-90 w-full h-full">
+                                <circle
+                                        class="text-gray-600"
+                                        stroke-width="32"
+                                        stroke="currentColor"
+                                        cx="140"
+                                        cy="140"
+                                        r="100"
+                                        fill="transparent"
+                                ></circle>
+                                <circle
+                                        class="text-lime-400 progress-ring__circle"
+                                        stroke-width="32"
+                                        stroke="currentColor"
+                                        stroke-dasharray="628"
+                                        stroke-dashoffset="628"
+                                        cx="140"
+                                        cy="140"
+                                        r="100"
+                                        fill="transparent"
+                                ></circle>
+                            </svg>
+                            <span class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-4xl font-bold text-white">
+                    35%
+                </span>
+                            <h2 class="mt-5 text-lg font-normal text-white text-center">
+                                ТГ, які розробляють стратегії
+                            </h2>
+                        </div>
+
+                        <!-- Четверте коло -->
+                        <div class="relative w-[280px] h-[280px]">
+                            <svg class="transform -rotate-90 w-full h-full">
+                                <circle
+                                        class="text-gray-600"
+                                        stroke-width="32"
+                                        stroke="currentColor"
+                                        cx="140"
+                                        cy="140"
+                                        r="100"
+                                        fill="transparent"
+                                ></circle>
+                                <circle
+                                        class="text-lime-400 progress-ring__circle"
+                                        stroke-width="32"
+                                        stroke="currentColor"
+                                        stroke-dasharray="628"
+                                        stroke-dashoffset="628"
+                                        cx="140"
+                                        cy="140"
+                                        r="100"
+                                        fill="transparent"
+                                ></circle>
+                            </svg>
+                            <span class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-4xl font-bold text-white">
+                    9%
+                </span>
+                            <h2 class="mt-5 text-lg font-normal text-white text-center">
+                                ТГ, які не починали роботу над стратегіями
+                            </h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <script>
+                document.addEventListener("DOMContentLoaded", () => {
+                    const circles = document.querySelectorAll(
+                        ".progress-ring__circle"
+                    );
+                    const percentages = [91, 56, 35, 9];
+                    const circumference = 2 * Math.PI * 100;
+
+                    const observerOptions = {
+                        root: null, // Следим за элементами относительно окна просмотра
+                        rootMargin: "0px", // Без дополнительных отступов
+                        threshold: 0.1 // Элемент считается видимым, если 10% его площади находится в зоне видимости
+                    };
+
+                    const observer = new IntersectionObserver((entries, observer) => {
+                        entries.forEach((entry) => {
+                            if (entry.isIntersecting) {
+                                const circle = entry.target;
+                                const index = Array.from(circles).indexOf(circle);
+                                const offset = circumference - (circumference * percentages[index]) / 100;
+                                circle.style.transition = "stroke-dashoffset 1.5s ease-out";
+                                circle.style.strokeDashoffset = offset;
+                                setTimeout(() => {
+                                    circle.classList.add("active");
+                                }, 500 + index * 1);
+                                observer.unobserve(circle); // Перестаем наблюдать за элементом после срабатывания
+                            }
+                        });
+                    }, observerOptions);
+                    circles.forEach((circle) => observer.observe(circle));
+                });
+            </script>
+<!--            Map-->
+            <div class="mb-36">
+                <div class="max-w-screen-xl mx-auto bg-black bg-opacity-100 backdrop-blend-difference rounded-2xl p-14">
+                    <div class="max-w-[1224px] flex justify-between items-center mx-auto mb-16">
+                        <p class="flex items-center text-lg font-normal leading-6 ">
+                            <img src="./images/Ellipse%206.svg" alt="" class="mr-3 -mb-2">
+                            більше 70% територіальних громад
+                        </p>
+                        <p class="flex items-center text-lg font-normal leading-6 ">
+                            <img src="./images/Ellipse%206%20(1).svg" alt="" class="mr-3 -mb-2">
+                            від 40% до 70% територіальних громад
+                        </p>
+                        <p class="flex items-center text-lg font-normal leading-6 ">
+                            <img src="./images/Ellipse%206%20(2).svg" alt="" class="mr-3 -mb-2">
+                            менше 40% територіальних громад
+                        </p>
+                    </div>
+                    <div class="max-w-[1224px] mx-auto">
+                        <img src="./images/Ukraine%20Map.png" alt="" class="w-full">
+                    </div>
+                </div>
+            </div>
+<!--            error-->
+            <div class="w-full h-[37px] bg-blue-600 flex justify-between items-center mb-11">
+                <p class="text-sm font-light leading-[22px]">Портал працює в тестовому режимі</p>
+                <p class="text-sm font-light leading-[22px]">Портал працює в тестовому режимі</p>
+                <p class="text-sm font-light leading-[22px]">Портал працює в тестовому режимі</p>
+                <p class="text-sm font-light leading-[22px]">Портал працює в тестовому режимі</p>
+                <p class="text-sm font-light leading-[22px]">Портал працює в тестовому режимі</p>
+                <p class="text-sm font-light leading-[22px]">Портал працює в тестовому режимі</p>
+            </div>
+<!--            bfooter-->
+            <div class="mb-11">
+                <div class="max-w-[1224px] mx-auto flex flex-col lg:flex-row">
+                    <!-- Логотип і опис -->
+                    <div class="mb-11">
+                        <div id="headerfooter" class="flex items-center mb-11">
+                            <img src="./images/Rectangle%20203.png" alt="" class="mr-4">
+                            <p class="text-white text-base">
+                                Геоінформаційна система <br> регіонального розвитку
+                            </p>
+                        </div>
+                        <!-- Адреса -->
+                        <div class="mb-8">
+                            <h2 class="text-lg font-normal leading-6 mb-4 text-white">Адреса:</h2>
+                            <p class="text-sm font-light leading-6 text-white">
+                                01135, Київ, Берестейський проспект, 14
+                            </p>
+                        </div>
+                        <!-- Розробка -->
+                        <div class="mb-8">
+                            <h2 class="text-lg font-normal leading-6 mb-4 text-white">Розробка та підтримка:</h2>
+                            <img src="./images/logo%202.svg" alt="">
+                        </div>
+                        <!-- Партнери -->
+                        <div>
+                            <h2 class="text-lg font-normal leading-6 mb-4 text-white">Партнери:</h2>
+                            <div class="flex items-center space-x-4">
+                                <img src="./images/miu%201.png" alt="">
+                                <img src="./images/logo1%201.png" alt="">
+                                <img src="./images/The_World_Bank_logo%201.png" alt="">
+                                <img src="./images/eu_logo%201.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Хвилі -->
+                    <div class="flex flex-col justify-center items-end relative">
+                        <img id="rose" src="./images/Group%204.svg" alt="" class="relative right-[38%] z-10">
+                        <img id="vector1" src="./images/Vector%2072.png" alt="" class="relative -top-[20%]">
+                        <img id="vector2" src="./images/Vector%2071.png" alt="" class="relative -top-[18%]">
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="max-w-screen-xl mx-auto flex justify-between pb-11">
+            <div class="text-s flex justify-between font-light text-gray-600 leading-5">
+                <p>Усі права на матеріали, розміщені на цьому сайті, належать <br> Міністерству розвитку громад, територій та інфраструктури. При
+                    <br> частковому або повному використанні матеріалів сайту обов'язковим <br> є посилання із зазначенням джерела</p>
+                <p>© 2024 Міністерство розвитку громад, територій та інфраструктури <br> України.</p>
+                <p>Весь контент доступний за ліцензією Creative Commons Attribution <br> 4.0 International license, якщо не зазначено інше</p>
+            </div>
+        </footer>
+    </div>
+</div>
+</body>
+</html>
